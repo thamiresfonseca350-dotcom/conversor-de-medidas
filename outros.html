@@ -1,5 +1,24 @@
-<nav class="navbar">
-    <a href="index.html">Comprimento (m)</a>
-    <a href="massa.html">Massa (kg)</a>
-    <a href="outros.html">Outras Medidas</a>
-</nav>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor - Outras Medidas</title>
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Comprimento (m)</a>
+        <a href="peso.html">Massa (kg)</a>
+        <a href="outros.html" class="active">Outros</a>
+    </nav>
+
+    <div class="container">
+        <h1>Litros → Galões | Celsius → Fahrenheit</h1>
+        <p>Cole as colunas do Excel: Coluna 1 (Litros) | Coluna 2 (Celsius)</p>
+        <textarea id="inputDados" placeholder="Cole as células aqui..."></textarea>
+        <button onclick="processarEBaixar('outros')">Gerar Relatório Excel</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
