@@ -1,30 +1,30 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor - Peso e Massa</title>
+    <title>Conversor Pro - Massa</title>
     <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <a href="index.html">Comprimento (m)</a>
-        <a href="peso.html" class="active">Massa (kg)</a>
-    </nav>
+    <aside class="sidebar">
+        <div class="sidebar-header"><h2>CONVERSOR PRO</h2></div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="nav-item"><span class="icon">📏</span> Comprimento</a>
+            <a href="peso.html" class="nav-item active"><span class="icon">⚖️</span> Massa (Kg)</a>
+            <a href="outros.html" class="nav-item"><span class="icon">✨</span> Outras Medidas</a>
+        </nav>
+    </aside>
 
-    <div class="container">
-        <header>
-            <h1>Conversor: Kg para Libras (lbs)</h1>
-            <p>Cole as colunas do Excel abaixo (várias linhas).</p>
-        </header>
-
-        <textarea id="inputDados" placeholder="Cole aqui... Ex:&#10;80&#10;55&#10;100"></textarea>
-
-        <div class="button-group">
-            <button onclick="processarEBaixar('peso')">Converter e Baixar Excel</button>
+    <main class="main-content">
+        <div class="container">
+            <h1>Conversão de Massa</h1>
+            <p>Converta Quilos (Kg) para Libras (lbs) colando os dados do Excel.</p>
+            <textarea id="inputDados" placeholder="Ex: 80, 55, 100..."></textarea>
+            <button onclick="processarEBaixar('peso')">Gerar Excel (.xlsx)</button>
         </div>
-    </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
