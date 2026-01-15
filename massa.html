@@ -2,20 +2,20 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Conversor Pro - Comprimento</title>
+    <title>Conversor Pro - Massa</title>
     <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <a href="index.html" class="active">Comprimento (m → ft)</a>
-        <a href="massa.html">Massa (kg → lbs)</a>
+        <a href="index.html">Comprimento (m → ft)</a>
+        <a href="massa.html" class="active">Massa (kg → lbs)</a>
     </nav>
     <div class="glass-container">
-        <h1>Conversor: Metros para Pés</h1>
-        <p>Cole suas colunas do Excel abaixo (várias linhas).</p>
+        <h1>Conversor: Kg para Libras</h1>
+        <p>Cole suas colunas de peso do Excel abaixo.</p>
         <textarea id="inputDados" placeholder="Cole aqui as linhas do Excel..."></textarea>
-        <button onclick="converterComprimento()">Converter e Baixar Excel</button>
+        <button onclick="converterMassa()">Converter e Baixar Excel</button>
     </div>
     <script src="script.js"></script>
 </body>
