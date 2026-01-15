@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converta & Exporte</title>
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="glass-container">
+        <h1>Medida Master</h1>
+        <p>Converta metros e baixe os dados</p>
+
+        <div class="input-group">
+            <input type="number" id="inputMetros" placeholder="Digite o valor em metros...">
+            <button onclick="gerarExcel()">Converter & Baixar XLSX</button>
+        </div>
+
+        <div id="resultado" class="hidden">
+            <p>Seu arquivo foi gerado com sucesso!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
