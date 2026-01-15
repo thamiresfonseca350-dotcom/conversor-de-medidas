@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor - Peso e Massa</title>
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Comprimento (m)</a>
+        <a href="peso.html" class="active">Massa (kg)</a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Conversor: Kg para Libras (lbs)</h1>
+            <p>Cole as colunas do Excel abaixo (várias linhas).</p>
+        </header>
+
+        <textarea id="inputDados" placeholder="Cole aqui... Ex:&#10;80&#10;55&#10;100"></textarea>
+
+        <div class="button-group">
+            <button onclick="processarEBaixar('peso')">Converter e Baixar Excel</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
