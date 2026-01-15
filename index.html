@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Converta & Exporte</title>
+    <title>Multi-Conversor Industrial | Thamires Fonseca</title>
     <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container-app">
+        <header>
+            <h1>Conversor de Dados em Massa</h1>
+            <p>Cole as colunas do Excel abaixo (Metros, Kg, Litros, Celsius).</p>
+        </header>
 
-    <div class="glass-container">
-        <h1>Medida Master</h1>
-        <p>Converta metros e baixe os dados</p>
+        <textarea id="dadosExcel" placeholder="Cole suas colunas aqui..."></textarea>
 
-        <div class="input-group">
-            <input type="number" id="inputMetros" placeholder="Digite o valor em metros...">
-            <button onclick="gerarExcel()">Converter & Baixar XLSX</button>
+        <div class="controles">
+            <button class="btn-principal" onclick="processarConversao()">Processar e Baixar .XLSX</button>
+            <button class="btn-limpar" onclick="limparCampos()">Limpar Tudo</button>
         </div>
 
-        <div id="resultado" class="hidden">
-            <p>Seu arquivo foi gerado com sucesso!</p>
+        <div id="feedback" class="mensagem-sucesso hidden">
+            <span>✔ Planilha gerada com sucesso!</span>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
